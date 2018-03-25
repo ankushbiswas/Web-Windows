@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+#vlcplayer {
+text-align:center;
+border:5px solid black;
+}
+#imgInp {}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<div style="text-align:center;">
+<p style="text-align:center;">Choose Files To Play</p>
+<div >
+        <input type='file' id="imgInp" style="border:5px solid red;" />
+        </div>
+        <hr>
+        <div id="vlcplayer"><p style="">Audio/Video Player</p><hr style="height:5px;background-color:black;">
+        <video id="vlc" src="" alt="Play Your Video" width="100%" height="" poster="https://i.imgur.com/Z4usRDz.jpg" controls autoplay/>
+        </div>
+
+</div>
+
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#vlc').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+</script>
+
+
+
+</body>
+
+</html>
