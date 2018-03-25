@@ -6,26 +6,27 @@
 body{
 width:80%;
 margin-left:10%;
-        margin-right:10%;
 }
 #vlcplayer {
 text-align:center;
 border:5px solid black;
 }
 #imgInp {}
-
+h1 {
+    text-decoration: underline;
+}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <div style="text-align:center;">
-<p style="text-align:center;">Choose Files To Play</p>
+<h1 style="text-align:center;">Choose Files To Play</h1>
 <div >
         <input type='file' id="imgInp" style="border:5px solid red;" />
         </div>
         <hr>
         <div id="vlcplayer"><p style="">Audio/Video Player</p><hr style="height:5px;background-color:black;">
-        <video id="vlc" src="" alt="Play Your Video" width="100%" height="" poster="https://i.imgur.com/Z4usRDz.jpg" controls autoplay/>
+        <video id="vlc" src="" alt="Play Your Video" width="480px" height="360px" poster="https://i.imgur.com/Z4usRDz.jpg" controls autoplay/>
         </div>
 
 </div>
