@@ -3,9 +3,13 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    </head>
    <body>
    <style>
+#scrnrotate{
+   display:none;
+   }
 *:after
 {
    box-sizing: border-box;
@@ -66,11 +70,18 @@ textarea
    margin-left: 1em;
 }
 </style>
+<script>
+$(document).ready(function(){
+$("#pleaserotate-backdrop").click(function(){
+	$("input#lock-button").click();
+});
+});
+</script>
+<button id="pleaserotate-backdrop">click</button>
    
-   <input class="sbutton" id="lock-button" type="submit" value="Lock!" />
-   <input class="sbutton" id="unlock-button" type="reset" value="Unlock!" />
+   
 
-<div id=scrnrotate style="display:block;">    
+<div id="scrnrotate">    
       <h1>Screen Orientation API</h1>
 
       <span id="so-unsupported" class="api-support hidden">API not supported</span>
@@ -93,7 +104,8 @@ textarea
                <option value="landscape-secondary">landscape-secondary</option>
             </select>
             <br />
-            
+            <input class="sbutton" id="lock-button" type="submit" value="Lock!" />
+   <input class="sbutton" id="unlock-button" type="reset" value="Unlock!" />
          </form>
       </div>
 
