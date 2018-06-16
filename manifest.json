@@ -1,15 +1,4 @@
 {
-    "name": "Indianhopemedia66 Push Notification",
-    "short_name": "indianhopemedia66",
-    "gcm_sender_id": "539876079581",
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "landscape",
-    "icons": [
-        {
-            "src": "https://cdn.pushalert.co/img/pushalert-square-icon.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        }
-    ]
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID"
 }
