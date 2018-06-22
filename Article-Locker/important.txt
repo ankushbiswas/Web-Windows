@@ -20,11 +20,11 @@ facebook: {
   },
   share:{
     appId:1345306108924800,
-    url:"civilengineeringsolve.blogspot.com"
+    url:"civilsolutionwindow.blogspot.com"
   },
 },
 
-    google: {url:"civilengineeringsolve.blogspot.com"},
+    google: {url:"civilsolutionwindow.blogspot.com"},
 
     text: {
       header: "Like us To Unlock This Content",
