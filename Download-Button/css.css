@@ -32,7 +32,7 @@ background: -ms-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* IE10+ */
 background: linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
 }
-.button p {
+.button span {
   background: #222;
   display: block;
   height: 40px;
@@ -57,7 +57,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
      -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
           box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
-.button a, p {
+.button a, span {
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
           border-radius: 10px;
