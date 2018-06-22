@@ -1,0 +1,39 @@
+﻿<link href=’https://7475c86c7b904ff243d5e5053fa73033884596a6.googledrive.com/host/0B9yW-IonjS65T0N0V1ltazF6SEE’ rel=’stylesheet’/>
+
+<script src=’https://0fbf35074d8fc72d66d79874501738c32737dc58.googledrive.com/host/0B9yW-IonjS65UGFwbWpxUlc5MFk’ type=’text/javascript’/>
+
+
+
+<script type='text/javascript'>
+//<![CDATA[
+jQuery(document).ready(function($) {
+  $('#default-usage .to-lock').sociallocker({
+
+    buttons: {order:["facebook-share","twitter-tweet","google-plus"]},
+
+    twitter: {url:"www.twitter.com/bloggingvision"},
+
+facebook: {
+  like:{
+    url:"www.facebook.com/bloggingvision"
+  },
+  share:{
+    appId:974590839306086,
+    url:"www.bloggingvision.com"
+  },
+},
+
+    google: {url:"www.bloggingvision.com"},
+
+    text: {
+      header: "Like us To Unlock This Content",
+      message: "This content is locked. Like us on Twitter, Facebook or Google plus to unlock it."
+    },
+
+    locker: {close: false, timer: 0,},
+    theme: "flat"
+  });
+});
+//]]>
+</script>
+
