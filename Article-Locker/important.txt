@@ -21,6 +21,7 @@ jQuery(document).ready(function ($) {
 	},
 	theme: 'secrets',
 	googleAnalytics: true,
+	demo: true,
 	facebook:{
 	   like:{
 	      url: 'https://www.facebook.com/MediaInfoTech009'
@@ -43,7 +44,7 @@ jQuery(document).ready(function ($) {
 	   }
 	},
 	buttons:{
-	   order: ["facebook-like","google-share","facebook-share","youtube-subscribe"],
+	   order: ["facebook-like","facebook-share","google-share","youtube-subscribe"],
 	   counters: true,
 	   lazy: true
 	}
