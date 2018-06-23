@@ -1,44 +1,61 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0&appId=1829808887349527&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-<script src='http://code.jquery.com/jquery-1.10.2.min.js' type='text/javascript'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.rawgit.com/ankushbiswas/Web-Windows/master/Article-Locker/js/libs/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/ankushbiswas/Web-Windows/master/Article-Locker/js/libs/jquery.ui.highlight.min.js"></script>
+<script src="https://cdn.rawgit.com/ankushbiswas/Web-Windows/master/Article-Locker/js/pandalocker.2.3.1.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/ankushbiswas/Web-Windows/master/Article-Locker/css/pandalocker.2.3.1.min.css">
 
-<link href='https://cdn.rawgit.com/ankushbiswas/Web-Windows/143b1e7f/Article-Locker/css.css' rel='stylesheet'/>
-<script src='https://cdn.rawgit.com/ankushbiswas/Web-Windows/143b1e7f/Article-Locker/javascript.js' type='text/javascript'></script>
-<script type='text/javascript'>
-//<![CDATA[
-$(function(){
-  $('.socialLocker .to-lock').sociallocker({
-
-    buttons: {order:["facebook-share","google-share","facebook-like","twitter-tweet"]},
-
-    twitter: {url:"https://civilsolutionwindow.blogspot.com/"},
-    facebook: {
-  like:{
-    url:"https://www.facebook.com/MediaInfoTech009/" //replace with your Facebook url
-  },
-  share:{
-    appId:1345306108924800, //write your App ID,
-    url:"https://civilsolutionwindow.blogspot.com", //replace with your blog name
-  },
-},
-    google: {url:"https://civilsolutionwindow.blogspot.com"},
-
-    text: {
-      header: "Like us To Unlock This Content",
-      message: "This content is locked. Like us on Twitter, Facebook or Google plus to unlock it."
-    },
-
-    locker: {close: false, timer: 0,},
-    theme: "secrets"
-  });
+<script>
+jQuery(document).ready(function ($) {
+   $('.to-lock').sociallocker({
+	text:{
+	   header: 'This Download content is locked'
+	},
+	theme: 'secrets',
+	googleAnalytics: true,
+	facebook:{
+	   like:{
+	      url: 'https://www.facebook.com/MediaInfoTech009'
+	   },
+	   share:{
+	      url: 'https://civilsolutionwindow.blogspot.com'
+	   },
+	   appId: '1829808887349527'
+	},
+	google:{
+	   share:{
+	      clientId: '341988982323-cta2qm5rtcjjufv86tcmrh79ss3cpi98.apps.googleusercontent.com',
+	      url: 'https://civilsolutionwindow.blogspot.com'
+	   }
+	},
+	youtube:{
+	   subscribe:{
+	      channelId: 'UCleJ4l5kX6_tlt5d23wHeyQ',
+	      clientId: '341988982323-cta2qm5rtcjjufv86tcmrh79ss3cpi98.apps.googleusercontent.com'
+	   }
+	},
+	buttons:{
+	   order: ["facebook-like","google-share","facebook-share","youtube-subscribe"],
+	   counters: true,
+	   lazy: true
+	}
+   });
 });
-//]]>
 </script>
 
-
-<article class="socialLocker">
+<div class="socialLocker">
  <div class="to-lock" style="display:none;">
 
   -- Your Content --
 
  </div>
-</article>
+</div>
+
